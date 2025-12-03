@@ -8,6 +8,12 @@ router.get("/", (req, res) => {
     )
 })
 
+router.get("/login", (req, res) => {
+    res.render("login.njk", {
+        title: "Logga in",
+    })
+})
+
 router.get('/error', (req, res) => {
     throw new Error('Test error')
 })

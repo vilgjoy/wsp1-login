@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+{% include "components/header.njk" %}
+<main class="wrapper">
+    <form class="form login" action="/login" method="post">
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div class="form-control">
+        <div>
+            <label for="password">Lösenord</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="submit">Login</button>
+
+
+    </form>
+
+
+</main>
+{% include "components/footer.njk" %}
+{% endblock %}
